@@ -169,3 +169,51 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+
+# ==========================
+# VS Code & IntelliJ IDEA
+# ==========================
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+*.class
+
+# ==========================
+# Java (Maven/Gradle)
+# ==========================
+target/
+build/
+.gradle/
+.mvn/
+!**/src/main/**  # Ensure source files are not ignored
+!**/src/test/**  # Ensure test files are not ignored
+**/bin/
+**/logs/
+**/tmp/
+**/*.log
+
+# ==========================
+# Python
+# ==========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+*.pytest_cache/
+*.mypy_cache/
+
+# ==========================
+# General OS files
+# ==========================
+.DS_Store
+Thumbs.db

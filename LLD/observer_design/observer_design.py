@@ -1,7 +1,6 @@
 from abc import ABC, abstractmethod
 from typing import List, Dict, Any
 
-
 class Publisher(ABC):
     """Abstract class for publisher"""
     
