@@ -1,8 +1,8 @@
-public class MobileNotifierImpl implements Notifier {
+public class MobileObserverImpl implements Observer {
 
     private final String mobileId;
 
-    public MobileNotifierImpl(String mobileId) {
+    public MobileObserverImpl(String mobileId) {
         this.mobileId = mobileId;
     }
 

@@ -1,7 +1,7 @@
-public class EmailNotifierImpl implements Notifier {
+public class EmailObserverImpl implements Observer {
     private final String email;
 
-    public EmailNotifierImpl(String email) {
+    public EmailObserverImpl(String email) {
         this.email = email;
     }
 

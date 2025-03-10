@@ -3,28 +3,28 @@ import java.util.List;
 
 public class IphonePublisherImpl implements  Publisher {
 
-    List<Notifier> observerList;
+    List<Observer> observerList;
     String message;
     String publisherEventName = "iphoneInStock";
 
     public IphonePublisherImpl() {
-        this.observerList = new ArrayList<Notifier>();
+        this.observerList = new ArrayList<Observer>();
     }
 
     @Override
-    public void add(Notifier notifier) {
-        observerList.add(notifier);
+    public void add(Observer observer) {
+        observerList.add(observer);
     }
 
     @Override
-    public void remove(Notifier notifier) {
-        observerList.remove(notifier);
+    public void remove(Observer observer) {
+        observerList.remove(observer);
     }
 
     @Override
     public void notifySubscribers() {
-        for (Notifier notifier : this.observerList) {
-            notifier.update(this.message, this.publisherEventName);
+        for (Observer observer : this.observerList) {
+            observer.update(this.message, this.publisherEventName);
         }
     }
 
